@@ -7,12 +7,21 @@ var Style = StyleSheet.create({
 
     displayContainer: {
         flex: 2,
-        backgroundColor: '#193441'
+        backgroundColor: '#193441',
+        justifyContent: 'center'
+    },
+
+    displayText: {
+        color: 'white',
+        fontSize: 38,
+        fontWeight: 'bold',
+        textAlign: 'right',
+        padding: 20
     },
 
     inputContainer: {
         flex: 8,
-        backgroundColor: '#3E606F'
+        backgroundColor: 'orange'
     },
     inputRow: {
         flex: 1,
@@ -22,14 +31,17 @@ var Style = StyleSheet.create({
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
-        borderWidth: 0.5,
-        borderColor: '#91AA9D'
+        borderWidth: '1px',
+        borderColor: '#193441'
     },
 
     inputButtonText: {
         fontSize: 22,
         fontWeight: 'bold',
         color: 'white'
+    },
+    inputButtonHighlighted: {
+        backgroundColor: '#193441'
     }
 });
 
