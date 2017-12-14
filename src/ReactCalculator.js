@@ -8,7 +8,7 @@ const inputButtons = [
   [1, 2, 3, "/"],
   [4, 5, 6, "*"],
   [7, 8, 9, "-"],
-  [0, ".", "=", "+"]
+  [0, "AC", "=", "+"]
 ];
 
 export default class ReactCalculator extends Component {
@@ -82,6 +82,13 @@ export default class ReactCalculator extends Component {
   }
   _handleStringInput(str) {
     switch (str) {
+      case "AC":
+        this.setState({
+          selectedSymbol: null,
+          previousInputValue: null,
+          inputValue: null
+        });
+        break;
       case "/":
       case "*":
       case "+":
